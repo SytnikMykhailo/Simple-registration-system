@@ -1,2 +1,4 @@
 # Simple-registration-system
-Simple registration terminal system(using regular expressions, C++, SQL)
+Simple registration terminal system(using regular expressions, C++, SQL, gtest)
+
+compile with "g++ -o my_program main.cpp data_manip.cpp database_manip.cpp -I. -L. -lsqlite3"
