@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "D:/my coding projects/Simple-registration-system/tests/build/_deps/googletest-subbuild/CMakeFiles/googletest-populate"
+		},
+		{
+			"file" : "D:/my coding projects/Simple-registration-system/tests/build/_deps/googletest-subbuild/CMakeFiles/6dfdf05e97eed2bd0ff201cbbd368bd1/googletest-populate.rule"
+		},
+		{
+			"file" : "D:/my coding projects/Simple-registration-system/tests/build/_deps/googletest-subbuild/CMakeFiles/7a4cb28e89d1ce1a35487e2c2f131a45/googletest-populate-complete.rule"
+		},
+		{
+			"file" : "D:/my coding projects/Simple-registration-system/tests/build/_deps/googletest-subbuild/CMakeFiles/3d6909992dcb1bad24c7a8ff811ef862/googletest-populate-build.rule"
+		},
+		{
+			"file" : "D:/my coding projects/Simple-registration-system/tests/build/_deps/googletest-subbuild/CMakeFiles/3d6909992dcb1bad24c7a8ff811ef862/googletest-populate-configure.rule"
+		},
+		{
+			"file" : "D:/my coding projects/Simple-registration-system/tests/build/_deps/googletest-subbuild/CMakeFiles/3d6909992dcb1bad24c7a8ff811ef862/googletest-populate-download.rule"
+		},
+		{
+			"file" : "D:/my coding projects/Simple-registration-system/tests/build/_deps/googletest-subbuild/CMakeFiles/3d6909992dcb1bad24c7a8ff811ef862/googletest-populate-install.rule"
+		},
+		{
+			"file" : "D:/my coding projects/Simple-registration-system/tests/build/_deps/googletest-subbuild/CMakeFiles/3d6909992dcb1bad24c7a8ff811ef862/googletest-populate-mkdir.rule"
+		},
+		{
+			"file" : "D:/my coding projects/Simple-registration-system/tests/build/_deps/googletest-subbuild/CMakeFiles/3d6909992dcb1bad24c7a8ff811ef862/googletest-populate-patch.rule"
+		},
+		{
+			"file" : "D:/my coding projects/Simple-registration-system/tests/build/_deps/googletest-subbuild/CMakeFiles/3d6909992dcb1bad24c7a8ff811ef862/googletest-populate-test.rule"
+		},
+		{
+			"file" : "D:/my coding projects/Simple-registration-system/tests/build/_deps/googletest-subbuild/CMakeFiles/3d6909992dcb1bad24c7a8ff811ef862/googletest-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"googletest-populate"
+		],
+		"name" : "googletest-populate"
+	}
+}

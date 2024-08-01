@@ -1,0 +1,3 @@
+D:/my coding projects/Simple-registration-system/tests/build/_deps/googletest-subbuild/CMakeFiles/googletest-populate.dir
+D:/my coding projects/Simple-registration-system/tests/build/_deps/googletest-subbuild/CMakeFiles/ALL_BUILD.dir
+D:/my coding projects/Simple-registration-system/tests/build/_deps/googletest-subbuild/CMakeFiles/ZERO_CHECK.dir
