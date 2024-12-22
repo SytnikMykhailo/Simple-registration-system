@@ -5,7 +5,7 @@
 //add logs
 //add testing
 //NOTIFICATIONS VIA EMAIL
-
+//add sending massages
 
 int main(int argc, char **argv) {
     const char * db_name = "users.db";

@@ -12,4 +12,5 @@ struct command_regex{
 command_regex* create_command(command_regex* command);
 command_regex* fill_commands(command_regex* command);
 command_regex* insert_command(command_regex** head, command_regex* command);
+void delete_commands(command_regex* head);
 bool execute_command(std::string &command, sqlite3 *db, User &user);
