@@ -1,0 +1,394 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6AAFEEC2-01A1-381B-97E1-1D98B702F2D2}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>HashTable_test</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\my coding projects\Simple-registration-system\tests\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">HashTable_test.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">HashTable_test</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\my coding projects\Simple-registration-system\tests\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">HashTable_test.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">HashTable_test</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\my coding projects\Simple-registration-system\tests\build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">HashTable_test.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">HashTable_test</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\my coding projects\Simple-registration-system\tests\build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">HashTable_test.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">HashTable_test</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/my coding projects/Simple-registration-system/tests/build/_deps/googletest-src/googletest/include" /external:I "D:/my coding projects/Simple-registration-system/tests/build/_deps/googletest-src/googletest"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\my coding projects\Simple-registration-system\tests\build\_deps\googletest-src\googletest\include;D:\my coding projects\Simple-registration-system\tests\build\_deps\googletest-src\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\my coding projects\Simple-registration-system\tests\build\_deps\googletest-src\googletest\include;D:\my coding projects\Simple-registration-system\tests\build\_deps\googletest-src\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+C:\mingw64\bin\cmake.exe -D TEST_TARGET=HashTable_test -D "TEST_EXECUTABLE=D:/my coding projects/Simple-registration-system/tests/build/Debug/HashTable_test.exe" -D TEST_EXECUTOR= -D "TEST_WORKING_DIR=D:/my coding projects/Simple-registration-system/tests/build" -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=HashTable_test_TESTS -D "CTEST_FILE=D:/my coding projects/Simple-registration-system/tests/build/HashTable_test[1]_tests.cmake" -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_XML_OUTPUT_DIR= -P C:/mingw64/share/cmake-3.28/Modules/GoogleTestAddTests.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>lib\Debug\gtest_main.lib;lib\Debug\gtest.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/my coding projects/Simple-registration-system/tests/build/Debug/HashTable_test.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/my coding projects/Simple-registration-system/tests/build/Debug/HashTable_test.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/my coding projects/Simple-registration-system/tests/build/_deps/googletest-src/googletest/include" /external:I "D:/my coding projects/Simple-registration-system/tests/build/_deps/googletest-src/googletest"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\my coding projects\Simple-registration-system\tests\build\_deps\googletest-src\googletest\include;D:\my coding projects\Simple-registration-system\tests\build\_deps\googletest-src\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\my coding projects\Simple-registration-system\tests\build\_deps\googletest-src\googletest\include;D:\my coding projects\Simple-registration-system\tests\build\_deps\googletest-src\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+C:\mingw64\bin\cmake.exe -D TEST_TARGET=HashTable_test -D "TEST_EXECUTABLE=D:/my coding projects/Simple-registration-system/tests/build/Release/HashTable_test.exe" -D TEST_EXECUTOR= -D "TEST_WORKING_DIR=D:/my coding projects/Simple-registration-system/tests/build" -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=HashTable_test_TESTS -D "CTEST_FILE=D:/my coding projects/Simple-registration-system/tests/build/HashTable_test[1]_tests.cmake" -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_XML_OUTPUT_DIR= -P C:/mingw64/share/cmake-3.28/Modules/GoogleTestAddTests.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>lib\Release\gtest_main.lib;lib\Release\gtest.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/my coding projects/Simple-registration-system/tests/build/Release/HashTable_test.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/my coding projects/Simple-registration-system/tests/build/Release/HashTable_test.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/my coding projects/Simple-registration-system/tests/build/_deps/googletest-src/googletest/include" /external:I "D:/my coding projects/Simple-registration-system/tests/build/_deps/googletest-src/googletest"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\my coding projects\Simple-registration-system\tests\build\_deps\googletest-src\googletest\include;D:\my coding projects\Simple-registration-system\tests\build\_deps\googletest-src\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\my coding projects\Simple-registration-system\tests\build\_deps\googletest-src\googletest\include;D:\my coding projects\Simple-registration-system\tests\build\_deps\googletest-src\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+C:\mingw64\bin\cmake.exe -D TEST_TARGET=HashTable_test -D "TEST_EXECUTABLE=D:/my coding projects/Simple-registration-system/tests/build/MinSizeRel/HashTable_test.exe" -D TEST_EXECUTOR= -D "TEST_WORKING_DIR=D:/my coding projects/Simple-registration-system/tests/build" -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=HashTable_test_TESTS -D "CTEST_FILE=D:/my coding projects/Simple-registration-system/tests/build/HashTable_test[1]_tests.cmake" -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_XML_OUTPUT_DIR= -P C:/mingw64/share/cmake-3.28/Modules/GoogleTestAddTests.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>lib\MinSizeRel\gtest_main.lib;lib\MinSizeRel\gtest.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/my coding projects/Simple-registration-system/tests/build/MinSizeRel/HashTable_test.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/my coding projects/Simple-registration-system/tests/build/MinSizeRel/HashTable_test.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/my coding projects/Simple-registration-system/tests/build/_deps/googletest-src/googletest/include" /external:I "D:/my coding projects/Simple-registration-system/tests/build/_deps/googletest-src/googletest"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\my coding projects\Simple-registration-system\tests\build\_deps\googletest-src\googletest\include;D:\my coding projects\Simple-registration-system\tests\build\_deps\googletest-src\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\my coding projects\Simple-registration-system\tests\build\_deps\googletest-src\googletest\include;D:\my coding projects\Simple-registration-system\tests\build\_deps\googletest-src\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+C:\mingw64\bin\cmake.exe -D TEST_TARGET=HashTable_test -D "TEST_EXECUTABLE=D:/my coding projects/Simple-registration-system/tests/build/RelWithDebInfo/HashTable_test.exe" -D TEST_EXECUTOR= -D "TEST_WORKING_DIR=D:/my coding projects/Simple-registration-system/tests/build" -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=HashTable_test_TESTS -D "CTEST_FILE=D:/my coding projects/Simple-registration-system/tests/build/HashTable_test[1]_tests.cmake" -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_XML_OUTPUT_DIR= -P C:/mingw64/share/cmake-3.28/Modules/GoogleTestAddTests.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>lib\RelWithDebInfo\gtest_main.lib;lib\RelWithDebInfo\gtest.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/my coding projects/Simple-registration-system/tests/build/RelWithDebInfo/HashTable_test.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/my coding projects/Simple-registration-system/tests/build/RelWithDebInfo/HashTable_test.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\my coding projects\Simple-registration-system\tests\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/my coding projects/Simple-registration-system/tests/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\mingw64\bin\cmake.exe "-SD:/my coding projects/Simple-registration-system/tests" "-BD:/my coding projects/Simple-registration-system/tests/build" --check-stamp-file "D:/my coding projects/Simple-registration-system/tests/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\mingw64\share\cmake-3.28\Modules\CMakeCInformation.cmake;C:\mingw64\share\cmake-3.28\Modules\CMakeCXXInformation.cmake;C:\mingw64\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;C:\mingw64\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;C:\mingw64\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;C:\mingw64\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;C:\mingw64\share\cmake-3.28\Modules\CMakeRCInformation.cmake;C:\mingw64\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;C:\mingw64\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;C:\mingw64\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\mingw64\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake;C:\mingw64\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake;C:\mingw64\share\cmake-3.28\Modules\Compiler\MSVC.cmake;C:\mingw64\share\cmake-3.28\Modules\ExternalProject\shared_internal_commands.cmake;C:\mingw64\share\cmake-3.28\Modules\FetchContent.cmake;C:\mingw64\share\cmake-3.28\Modules\FetchContent\CMakeLists.cmake.in;C:\mingw64\share\cmake-3.28\Modules\GoogleTest.cmake;C:\mingw64\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;C:\mingw64\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake;C:\mingw64\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake;C:\mingw64\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;C:\mingw64\share\cmake-3.28\Modules\Platform\Windows.cmake;C:\mingw64\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;D:\my coding projects\Simple-registration-system\tests\build\CMakeFiles\3.28.1\CMakeCCompiler.cmake;D:\my coding projects\Simple-registration-system\tests\build\CMakeFiles\3.28.1\CMakeCXXCompiler.cmake;D:\my coding projects\Simple-registration-system\tests\build\CMakeFiles\3.28.1\CMakeRCCompiler.cmake;D:\my coding projects\Simple-registration-system\tests\build\CMakeFiles\3.28.1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\my coding projects\Simple-registration-system\tests\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/my coding projects/Simple-registration-system/tests/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\mingw64\bin\cmake.exe "-SD:/my coding projects/Simple-registration-system/tests" "-BD:/my coding projects/Simple-registration-system/tests/build" --check-stamp-file "D:/my coding projects/Simple-registration-system/tests/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\mingw64\share\cmake-3.28\Modules\CMakeCInformation.cmake;C:\mingw64\share\cmake-3.28\Modules\CMakeCXXInformation.cmake;C:\mingw64\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;C:\mingw64\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;C:\mingw64\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;C:\mingw64\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;C:\mingw64\share\cmake-3.28\Modules\CMakeRCInformation.cmake;C:\mingw64\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;C:\mingw64\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;C:\mingw64\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\mingw64\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake;C:\mingw64\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake;C:\mingw64\share\cmake-3.28\Modules\Compiler\MSVC.cmake;C:\mingw64\share\cmake-3.28\Modules\ExternalProject\shared_internal_commands.cmake;C:\mingw64\share\cmake-3.28\Modules\FetchContent.cmake;C:\mingw64\share\cmake-3.28\Modules\FetchContent\CMakeLists.cmake.in;C:\mingw64\share\cmake-3.28\Modules\GoogleTest.cmake;C:\mingw64\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;C:\mingw64\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake;C:\mingw64\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake;C:\mingw64\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;C:\mingw64\share\cmake-3.28\Modules\Platform\Windows.cmake;C:\mingw64\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;D:\my coding projects\Simple-registration-system\tests\build\CMakeFiles\3.28.1\CMakeCCompiler.cmake;D:\my coding projects\Simple-registration-system\tests\build\CMakeFiles\3.28.1\CMakeCXXCompiler.cmake;D:\my coding projects\Simple-registration-system\tests\build\CMakeFiles\3.28.1\CMakeRCCompiler.cmake;D:\my coding projects\Simple-registration-system\tests\build\CMakeFiles\3.28.1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\my coding projects\Simple-registration-system\tests\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/my coding projects/Simple-registration-system/tests/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\mingw64\bin\cmake.exe "-SD:/my coding projects/Simple-registration-system/tests" "-BD:/my coding projects/Simple-registration-system/tests/build" --check-stamp-file "D:/my coding projects/Simple-registration-system/tests/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\mingw64\share\cmake-3.28\Modules\CMakeCInformation.cmake;C:\mingw64\share\cmake-3.28\Modules\CMakeCXXInformation.cmake;C:\mingw64\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;C:\mingw64\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;C:\mingw64\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;C:\mingw64\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;C:\mingw64\share\cmake-3.28\Modules\CMakeRCInformation.cmake;C:\mingw64\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;C:\mingw64\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;C:\mingw64\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\mingw64\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake;C:\mingw64\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake;C:\mingw64\share\cmake-3.28\Modules\Compiler\MSVC.cmake;C:\mingw64\share\cmake-3.28\Modules\ExternalProject\shared_internal_commands.cmake;C:\mingw64\share\cmake-3.28\Modules\FetchContent.cmake;C:\mingw64\share\cmake-3.28\Modules\FetchContent\CMakeLists.cmake.in;C:\mingw64\share\cmake-3.28\Modules\GoogleTest.cmake;C:\mingw64\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;C:\mingw64\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake;C:\mingw64\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake;C:\mingw64\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;C:\mingw64\share\cmake-3.28\Modules\Platform\Windows.cmake;C:\mingw64\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;D:\my coding projects\Simple-registration-system\tests\build\CMakeFiles\3.28.1\CMakeCCompiler.cmake;D:\my coding projects\Simple-registration-system\tests\build\CMakeFiles\3.28.1\CMakeCXXCompiler.cmake;D:\my coding projects\Simple-registration-system\tests\build\CMakeFiles\3.28.1\CMakeRCCompiler.cmake;D:\my coding projects\Simple-registration-system\tests\build\CMakeFiles\3.28.1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\my coding projects\Simple-registration-system\tests\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/my coding projects/Simple-registration-system/tests/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\mingw64\bin\cmake.exe "-SD:/my coding projects/Simple-registration-system/tests" "-BD:/my coding projects/Simple-registration-system/tests/build" --check-stamp-file "D:/my coding projects/Simple-registration-system/tests/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\mingw64\share\cmake-3.28\Modules\CMakeCInformation.cmake;C:\mingw64\share\cmake-3.28\Modules\CMakeCXXInformation.cmake;C:\mingw64\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;C:\mingw64\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;C:\mingw64\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;C:\mingw64\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;C:\mingw64\share\cmake-3.28\Modules\CMakeRCInformation.cmake;C:\mingw64\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;C:\mingw64\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;C:\mingw64\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\mingw64\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake;C:\mingw64\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake;C:\mingw64\share\cmake-3.28\Modules\Compiler\MSVC.cmake;C:\mingw64\share\cmake-3.28\Modules\ExternalProject\shared_internal_commands.cmake;C:\mingw64\share\cmake-3.28\Modules\FetchContent.cmake;C:\mingw64\share\cmake-3.28\Modules\FetchContent\CMakeLists.cmake.in;C:\mingw64\share\cmake-3.28\Modules\GoogleTest.cmake;C:\mingw64\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;C:\mingw64\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake;C:\mingw64\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake;C:\mingw64\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;C:\mingw64\share\cmake-3.28\Modules\Platform\Windows.cmake;C:\mingw64\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;D:\my coding projects\Simple-registration-system\tests\build\CMakeFiles\3.28.1\CMakeCCompiler.cmake;D:\my coding projects\Simple-registration-system\tests\build\CMakeFiles\3.28.1\CMakeCXXCompiler.cmake;D:\my coding projects\Simple-registration-system\tests\build\CMakeFiles\3.28.1\CMakeRCCompiler.cmake;D:\my coding projects\Simple-registration-system\tests\build\CMakeFiles\3.28.1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\my coding projects\Simple-registration-system\tests\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\my coding projects\Simple-registration-system\tests\HashTable_test.cpp" />
+    <ClCompile Include="D:\my coding projects\Simple-registration-system\data_structures\HashTable.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\my coding projects\Simple-registration-system\tests\build\ZERO_CHECK.vcxproj">
+      <Project>{C9CAE506-753C-3E54-A21C-9B13F7785443}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\my coding projects\Simple-registration-system\tests\build\_deps\googletest-build\googletest\gtest.vcxproj">
+      <Project>{CE30351E-1174-3A82-94DE-29D8524B69AD}</Project>
+      <Name>gtest</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\my coding projects\Simple-registration-system\tests\build\_deps\googletest-build\googletest\gtest_main.vcxproj">
+      <Project>{8BA3C3EC-F57E-3756-82E3-BDF4D72D6323}</Project>
+      <Name>gtest_main</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

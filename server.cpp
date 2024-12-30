@@ -70,16 +70,31 @@ int main(int argc, char **argv) {
                 client_sockets.push_back(client_socket);
             }
         }
-
         for(SOCKET socket : client_sockets){
             FD_SET(socket, &readfds);
         }
-
         if(select(0, &readfds, NULL, NULL, NULL) == SOCKET_ERROR){
             WSACleanup();
             error("Select error", 10);
         }
-        
+        for(int i = 0; i < client_sockets.size(); i++){
+            if(FD_ISSET(client_sockets.at(i), &readfds)){
+                char buf[1024];
+                int bytes_recieved = recv(client_sockets.at(i), buf, sizeof(buf), 0);
+                if(bytes_recieved == -1){
+                    std::cerr << "Recv error" << std::endl;
+                    closesocket(client_sockets.at(i));
+                    client_sockets.erase(client_sockets.begin() + i);
+                    i--;
+                }else if(bytes_recieved == 0){
+                    std::cout << "Client disconected" << std::endl;
+                    client_sockets.erase(client_sockets.begin() + i);
+                    i--;
+                }else{
+                    //server commands
+                }
+            }
+        }
     }
 
     WSACleanup();

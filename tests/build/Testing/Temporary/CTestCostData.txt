@@ -1,2 +1,5 @@
-HelloTest.BasicAssertions 1 0.0587319
+HelloTest.BasicAssertions 14 0.000932293
+HashTable_test_NOT_BUILT 0 0
+HashTableTest.AssertionTest 12 0.000969825
+HashTableTest.DeleteTest 2 0.00593875
 ---

@@ -1,4 +1,5 @@
 D:/my coding projects/Simple-registration-system/tests/build/CMakeFiles/hello_test.dir
+D:/my coding projects/Simple-registration-system/tests/build/CMakeFiles/HashTable_test.dir
 D:/my coding projects/Simple-registration-system/tests/build/CMakeFiles/RUN_TESTS.dir
 D:/my coding projects/Simple-registration-system/tests/build/CMakeFiles/INSTALL.dir
 D:/my coding projects/Simple-registration-system/tests/build/CMakeFiles/ALL_BUILD.dir

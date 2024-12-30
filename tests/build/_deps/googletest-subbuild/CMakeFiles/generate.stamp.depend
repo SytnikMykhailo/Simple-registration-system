@@ -1,8 +1,6 @@
 # CMake generation dependency list for this directory.
-C:/mingw64/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake
 C:/mingw64/share/cmake-3.28/Modules/CMakeGenericSystem.cmake
 C:/mingw64/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake
-C:/mingw64/share/cmake-3.28/Modules/CMakeSystem.cmake.in
 C:/mingw64/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake
 C:/mingw64/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake
 C:/mingw64/share/cmake-3.28/Modules/ExternalProject.cmake

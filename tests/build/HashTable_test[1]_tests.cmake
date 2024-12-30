@@ -1,0 +1,5 @@
+add_test([=[HashTableTest.AssertionTest]=]  [==[D:/my coding projects/Simple-registration-system/tests/build/Debug/HashTable_test.exe]==] [==[--gtest_filter=HashTableTest.AssertionTest]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[HashTableTest.AssertionTest]=]  PROPERTIES WORKING_DIRECTORY [==[D:/my coding projects/Simple-registration-system/tests/build]==] SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test([=[HashTableTest.DeleteTest]=]  [==[D:/my coding projects/Simple-registration-system/tests/build/Debug/HashTable_test.exe]==] [==[--gtest_filter=HashTableTest.DeleteTest]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[HashTableTest.DeleteTest]=]  PROPERTIES WORKING_DIRECTORY [==[D:/my coding projects/Simple-registration-system/tests/build]==] SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+set(  HashTable_test_TESTS HashTableTest.AssertionTest HashTableTest.DeleteTest)

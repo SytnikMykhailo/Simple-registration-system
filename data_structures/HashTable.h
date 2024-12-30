@@ -1,8 +1,12 @@
 class HashTable{
 public:
-    HashTable() = default;
+    HashTable();
     HashTable(int numberOfElements, int capacity);
-    int hashFunction(HashTable &hashTable, char *key);
+    int hashFunction(const char *key);
+    void setNode(struct node *node, char *key, char *value);
+    void insert(const char *_key, const char *_value);
+    void deleteKey(const char *key);
+    char *search(const char *key);
     ~HashTable();
 private:
     int numberOfElements;

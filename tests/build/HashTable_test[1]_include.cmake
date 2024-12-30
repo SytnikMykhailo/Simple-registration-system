@@ -1,0 +1,5 @@
+if(EXISTS "D:/my coding projects/Simple-registration-system/tests/build/HashTable_test[1]_tests.cmake")
+  include("D:/my coding projects/Simple-registration-system/tests/build/HashTable_test[1]_tests.cmake")
+else()
+  add_test(HashTable_test_NOT_BUILT HashTable_test_NOT_BUILT)
+endif()

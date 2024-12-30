@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 3.14)
 project(my_project)
 
-# GoogleTest requires at least C++14
-set(CMAKE_CXX_STANDARD 14)
+# GoogleTest requires at least C++14, upgrading to C++17 for string_view support
+set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 include(FetchContent)
@@ -16,14 +16,15 @@ FetchContent_MakeAvailable(googletest)
 
 enable_testing()
 
-add_executable(
-  hello_test
-  hello_test.cpp
-)
-target_link_libraries(
-  hello_test
-  GTest::gtest_main
-)
+# Define hello_test executable
+add_executable(hello_test hello_test.cpp)
+target_link_libraries(hello_test GTest::gtest_main)
 
+# Define HashTable_test executable
+add_executable(HashTable_test HashTable_test.cpp ../data_structures/HashTable.cpp)
+target_link_libraries(HashTable_test GTest::gtest_main)
+
+# Automatically discover and add tests
 include(GoogleTest)
 gtest_discover_tests(hello_test)
+gtest_discover_tests(HashTable_test)

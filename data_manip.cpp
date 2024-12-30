@@ -8,6 +8,5 @@ bool validate_data_format(std::string& user_data){
             return true;
         }
     }
-    
     return false;
 }
