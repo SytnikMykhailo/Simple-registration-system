@@ -1,7 +1,7 @@
 #ifndef DATABASE_MANIP_H
 #define DATABASE_MANIP_H
 
-#include "sqlite3.h"
+#include "../sqlite3.h"
 #include <iostream>
 
 void create_table(sqlite3 *db);
