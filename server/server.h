@@ -25,5 +25,4 @@ private:
     WSAData wsaData;
     WORD wVersionRequested;
     u_long mode;
-
 };

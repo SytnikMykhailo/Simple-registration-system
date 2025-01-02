@@ -3,7 +3,7 @@
 
 class Database{
 public:
-    Database();
+    Database(const char *name);
     void open_db(const char *name);
     void create_table();
     void delete_table();
@@ -11,7 +11,7 @@ public:
     int find_user(const char *email);
     char* get_user_data(int id);
     void insert_user(int id, const char *email, const char *password, const char *name, const char *surname, const char *note);
-    void callback(void *NotUsed, int argc, char **argv, char **azColName);
+    static int callback(void *NotUsed, int argc, char **argv, char **azColName);
     ~Database();
 private:
     sqlite3 *db;

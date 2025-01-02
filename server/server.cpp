@@ -22,7 +22,6 @@ Server::Server(int port, int addrlen, int opt, char *ip){
     this->server_address.sin_addr.s_addr = INADDR_ANY;
 }
 
-
 void Server::setup(){
     wVersionRequested = MAKEWORD(2, 2);
     int err = WSAStartup(wVersionRequested, &wsaData);
