@@ -1,9 +1,9 @@
 GCC = g++
 STND = -std=c++17
 CFLAGS = -c -Wall -Wextra -Werror -pedantic -g
-LINK = -I. -L. -lsqlite3
+LINK = -I. -L. -lsqlite3 -lws2_32
 OBJ = server.o client.o database.o errors.o
-
+EXE = server.exe client.exe
 all: server client
 
 server: server.o database.o errors.o
@@ -25,4 +25,4 @@ errors.o: ./errors/errors.cpp
 	$(GCC) $(CFLAGS) $(STND) ./errors/errors.cpp
 
 clean:
-	rm -f $(OBJ) server client
+	rm -f $(OBJ) server client $(EXE)
