@@ -14,6 +14,9 @@ public:
     void run();
     void setup();
     friend void handle_signal(int signal);
+    sockaddr_in get_server_address(){
+        return server_address;
+    }
     ~Server();
 private:
     Database db;

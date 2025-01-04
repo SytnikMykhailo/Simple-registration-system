@@ -4,6 +4,7 @@
 class Database{
 public:
     Database(const char *name);
+    Database() = default;
     void open_db(const char *name);
     void create_table();
     void delete_table();

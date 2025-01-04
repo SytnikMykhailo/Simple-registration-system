@@ -1,6 +1,11 @@
 #include <iostream>
 #include "server.h"
+#include "../sqlite3.h"
+#include "../errors/errors.h"
+#include <signal.h>
+#include <winsock2.h>
 
+Server server;
 
 void handle_signal(int signum) {
     closesocket(server.socket_fd);
@@ -20,6 +25,7 @@ Server::Server(int port, int addrlen, int opt, char *ip){
     this->server_address.sin_family = AF_INET;
     this->server_address.sin_port = htons(port);
     this->server_address.sin_addr.s_addr = INADDR_ANY;
+    this->db = Database("users.db");
 }
 
 void Server::setup(){
@@ -77,6 +83,7 @@ void Server::run(){
             WSACleanup();
             error("Select error", 10);
         }
+        std::cout << "Entering loop" << std::endl;
         for(int i = 0; i < client_sockets.size(); i++){
             if(FD_ISSET(client_sockets.at(i), &readfds)){
                 char buf[1024];
@@ -91,22 +98,32 @@ void Server::run(){
                     client_sockets.erase(client_sockets.begin() + i);
                     i--;
                 }else{
-                    //server commands
+                    std::string message(buf, bytes_recieved);
+                    std::cout << "Message recieved: " << message << std::endl;
+                    if(message == "exit"){
+                        closesocket(client_sockets.at(i));
+                        client_sockets.erase(client_sockets.begin() + i);
+                        i--;
+                    }else{
+                        send(client_sockets.at(i), message.c_str(), message.size(), 0);
+                    }
                 }
             }
         }
     }
 }
 
-Server server;
-
 int main(int argc, char **argv) {
-    if(argc != 2){
+    if(argc != 3){
         error("Wrong number of arguments", 10);
     }
     int port = atoi(argv[1]);
     if(port < 1024 || port > 49151){
         error("Wrong port number", 10);
     }
+    server = Server(port, sizeof(sockaddr_in), 1, argv[2]);
+    server.setup();
+    std::cout << "Server running" << std::endl;
+    server.run();
     return 0;
 }
