@@ -9,7 +9,7 @@ void handle_signal(int signal);
 
 class Server{
 public:
-    Server();
+    Server() = default;
     Server(int port, int addrlen, int opt, char *ip);
     void run();
     void setup();

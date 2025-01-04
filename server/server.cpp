@@ -5,11 +5,13 @@
 #include <signal.h>
 #include <winsock2.h>
 
-Server server;
+Server *server = nullptr;
 
 void handle_signal(int signum) {
-    closesocket(server.socket_fd);
+    std::cout << "Signal: " << signum << std::endl;
+    closesocket(server->socket_fd);
     WSACleanup();
+    free(server);
     exit(EXIT_SUCCESS);
 }
 
@@ -24,7 +26,7 @@ Server::Server(int port, int addrlen, int opt, char *ip){
     this->opt = opt;
     this->server_address.sin_family = AF_INET;
     this->server_address.sin_port = htons(port);
-    this->server_address.sin_addr.s_addr = INADDR_ANY;
+    this->server_address.sin_addr.s_addr = inet_addr(ip); // Використовуємо передану IP-адресу
     this->db = Database("users.db");
 }
 
@@ -32,21 +34,15 @@ void Server::setup(){
     wVersionRequested = MAKEWORD(2, 2);
     int err = WSAStartup(wVersionRequested, &wsaData);
     if(err != 0){
-        error("Error initializing wisock dll", 10);
+        error("Error initializing winsock dll", 10);
     }
-    
     socket_fd = socket(AF_INET, SOCK_STREAM, 0);
     if(socket_fd == INVALID_SOCKET){
         WSACleanup();
-        error("Error creating spcket", 10);
+        error("Error creating socket", 10);
     }
-
     mode = 1;
     ioctlsocket(socket_fd, FIONBIO, &mode);
-
-    server_address.sin_family = AF_INET;
-    server_address.sin_port = htons(port);
-    server_address.sin_addr.s_addr = INADDR_ANY;
 
     if(bind(socket_fd, (struct sockaddr*)&server_address, sizeof(server_address)) == -1){
         error("Error binding socket", 10);
@@ -84,7 +80,7 @@ void Server::run(){
             error("Select error", 10);
         }
         std::cout << "Entering loop" << std::endl;
-        for(int i = 0; i < client_sockets.size(); i++){
+        for(int i = 0; i < (int)client_sockets.size(); i++){
             if(FD_ISSET(client_sockets.at(i), &readfds)){
                 char buf[1024];
                 int bytes_recieved = recv(client_sockets.at(i), buf, sizeof(buf), 0);
@@ -121,9 +117,12 @@ int main(int argc, char **argv) {
     if(port < 1024 || port > 49151){
         error("Wrong port number", 10);
     }
-    server = Server(port, sizeof(sockaddr_in), 1, argv[2]);
-    server.setup();
+    server = new Server(port, sizeof(sockaddr_in), 1, argv[2]);
+    server->setup();
     std::cout << "Server running" << std::endl;
-    server.run();
+    server->run();
+
+
+    free(server);
     return 0;
 }

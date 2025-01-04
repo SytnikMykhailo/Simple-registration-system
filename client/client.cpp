@@ -1,6 +1,7 @@
 #include "client.h"
 #include <iostream>
 #include <string>
+#include <winsock2.h>
 
 Client::Client(int port, int addrlen, char *ip) {
     this->port = port;
