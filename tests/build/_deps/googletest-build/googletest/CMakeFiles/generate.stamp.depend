@@ -11,8 +11,8 @@ C:/mingw64/share/cmake-3.28/Modules/FindPython/Support.cmake
 C:/mingw64/share/cmake-3.28/Modules/FindThreads.cmake
 C:/mingw64/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake
 C:/mingw64/share/cmake-3.28/Modules/WriteBasicConfigVersionFile.cmake
-D:/my coding projects/Simple-registration-system/tests/build/_deps/googletest-src/googletest/CMakeLists.txt
-D:/my coding projects/Simple-registration-system/tests/build/_deps/googletest-src/googletest/cmake/Config.cmake.in
-D:/my coding projects/Simple-registration-system/tests/build/_deps/googletest-src/googletest/cmake/gtest.pc.in
-D:/my coding projects/Simple-registration-system/tests/build/_deps/googletest-src/googletest/cmake/gtest_main.pc.in
-D:/my coding projects/Simple-registration-system/tests/build/_deps/googletest-src/googletest/cmake/internal_utils.cmake
+D:/my_coding_projects/Simple-registration-system/tests/build/_deps/googletest-src/googletest/CMakeLists.txt
+D:/my_coding_projects/Simple-registration-system/tests/build/_deps/googletest-src/googletest/cmake/Config.cmake.in
+D:/my_coding_projects/Simple-registration-system/tests/build/_deps/googletest-src/googletest/cmake/gtest.pc.in
+D:/my_coding_projects/Simple-registration-system/tests/build/_deps/googletest-src/googletest/cmake/gtest_main.pc.in
+D:/my_coding_projects/Simple-registration-system/tests/build/_deps/googletest-src/googletest/cmake/internal_utils.cmake

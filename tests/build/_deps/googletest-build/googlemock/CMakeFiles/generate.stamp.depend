@@ -5,6 +5,6 @@ C:/mingw64/share/cmake-3.28/Modules/CheckLibraryExists.cmake
 C:/mingw64/share/cmake-3.28/Modules/FindPackageHandleStandardArgs.cmake
 C:/mingw64/share/cmake-3.28/Modules/FindPackageMessage.cmake
 C:/mingw64/share/cmake-3.28/Modules/FindThreads.cmake
-D:/my coding projects/Simple-registration-system/tests/build/_deps/googletest-src/googlemock/CMakeLists.txt
-D:/my coding projects/Simple-registration-system/tests/build/_deps/googletest-src/googlemock/cmake/gmock.pc.in
-D:/my coding projects/Simple-registration-system/tests/build/_deps/googletest-src/googlemock/cmake/gmock_main.pc.in
+D:/my_coding_projects/Simple-registration-system/tests/build/_deps/googletest-src/googlemock/CMakeLists.txt
+D:/my_coding_projects/Simple-registration-system/tests/build/_deps/googletest-src/googlemock/cmake/gmock.pc.in
+D:/my_coding_projects/Simple-registration-system/tests/build/_deps/googletest-src/googlemock/cmake/gmock_main.pc.in

@@ -10,7 +10,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{B6CA8541-7D40-30B7-A653-03CD988B10B2}</ProjectGuid>
+    <ProjectGuid>{AB17622B-1863-33F2-8D4B-9AF45688A4DB}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
     <Platform>x64</Platform>
@@ -45,13 +45,13 @@
     </Midl>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\my coding projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\CMakeFiles\3d6909992dcb1bad24c7a8ff811ef862\googletest-populate-mkdir.rule">
+    <CustomBuild Include="D:\my_coding_projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\CMakeFiles\2a6395b7cea4f9c4af50a56034eae675\googletest-populate-mkdir.rule">
       <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</BuildInParallel>
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Creating directories for 'googletest-populate'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-C:\mingw64\bin\cmake.exe -Dcfgdir=/Debug -P "D:/my coding projects/Simple-registration-system/tests/build/_deps/googletest-subbuild/googletest-populate-prefix/tmp/googletest-populate-mkdirs.cmake"
+C:\mingw64\bin\cmake.exe -Dcfgdir=/Debug -P D:/my_coding_projects/Simple-registration-system/tests/build/_deps/googletest-subbuild/googletest-populate-prefix/tmp/googletest-populate-mkdirs.cmake
 if %errorlevel% neq 0 goto :cmEnd
-C:\mingw64\bin\cmake.exe -E touch "D:/my coding projects/Simple-registration-system/tests/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/Debug/googletest-populate-mkdir"
+C:\mingw64\bin\cmake.exe -E touch D:/my_coding_projects/Simple-registration-system/tests/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/Debug/googletest-populate-mkdir
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -60,25 +60,25 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\my coding projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\Debug\googletest-populate-mkdir</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\my_coding_projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\Debug\googletest-populate-mkdir</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\my coding projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\CMakeFiles\3d6909992dcb1bad24c7a8ff811ef862\googletest-populate-download.rule">
+    <CustomBuild Include="D:\my_coding_projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\CMakeFiles\2a6395b7cea4f9c4af50a56034eae675\googletest-populate-download.rule">
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing download step (download, verify and extract) for 'googletest-populate'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-cd "D:\my coding projects\Simple-registration-system\tests\build\_deps"
+cd D:\my_coding_projects\Simple-registration-system\tests\build\_deps
 if %errorlevel% neq 0 goto :cmEnd
 D:
 if %errorlevel% neq 0 goto :cmEnd
-C:\mingw64\bin\cmake.exe -P "D:/my coding projects/Simple-registration-system/tests/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/download-googletest-populate.cmake"
+C:\mingw64\bin\cmake.exe -P D:/my_coding_projects/Simple-registration-system/tests/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/download-googletest-populate.cmake
 if %errorlevel% neq 0 goto :cmEnd
-C:\mingw64\bin\cmake.exe -P "D:/my coding projects/Simple-registration-system/tests/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/verify-googletest-populate.cmake"
+C:\mingw64\bin\cmake.exe -P D:/my_coding_projects/Simple-registration-system/tests/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/verify-googletest-populate.cmake
 if %errorlevel% neq 0 goto :cmEnd
-C:\mingw64\bin\cmake.exe -P "D:/my coding projects/Simple-registration-system/tests/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/extract-googletest-populate.cmake"
+C:\mingw64\bin\cmake.exe -P D:/my_coding_projects/Simple-registration-system/tests/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/extract-googletest-populate.cmake
 if %errorlevel% neq 0 goto :cmEnd
-C:\mingw64\bin\cmake.exe -E touch "D:/my coding projects/Simple-registration-system/tests/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/Debug/googletest-populate-download"
+C:\mingw64\bin\cmake.exe -E touch D:/my_coding_projects/Simple-registration-system/tests/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/Debug/googletest-populate-download
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -86,18 +86,18 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\my coding projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\download-googletest-populate.cmake;D:\my coding projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\googletest-populate-urlinfo.txt;D:\my coding projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\Debug\googletest-populate-mkdir;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\my coding projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\Debug\googletest-populate-download</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\my_coding_projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\download-googletest-populate.cmake;D:\my_coding_projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\googletest-populate-urlinfo.txt;D:\my_coding_projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\Debug\googletest-populate-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\my_coding_projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\Debug\googletest-populate-download</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\my coding projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\CMakeFiles\3d6909992dcb1bad24c7a8ff811ef862\googletest-populate-update.rule">
+    <CustomBuild Include="D:\my_coding_projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\CMakeFiles\2a6395b7cea4f9c4af50a56034eae675\googletest-populate-update.rule">
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No update step for 'googletest-populate'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
 C:\mingw64\bin\cmake.exe -E echo_append
 if %errorlevel% neq 0 goto :cmEnd
-C:\mingw64\bin\cmake.exe -E touch "D:/my coding projects/Simple-registration-system/tests/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/Debug/googletest-populate-update"
+C:\mingw64\bin\cmake.exe -E touch D:/my_coding_projects/Simple-registration-system/tests/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/Debug/googletest-populate-update
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -105,18 +105,18 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\my coding projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\googletest-populate-update-info.txt;D:\my coding projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\Debug\googletest-populate-download;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\my coding projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\Debug\googletest-populate-update</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\my_coding_projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\googletest-populate-update-info.txt;D:\my_coding_projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\Debug\googletest-populate-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\my_coding_projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\Debug\googletest-populate-update</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\my coding projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\CMakeFiles\3d6909992dcb1bad24c7a8ff811ef862\googletest-populate-patch.rule">
+    <CustomBuild Include="D:\my_coding_projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\CMakeFiles\2a6395b7cea4f9c4af50a56034eae675\googletest-populate-patch.rule">
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No patch step for 'googletest-populate'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
 C:\mingw64\bin\cmake.exe -E echo_append
 if %errorlevel% neq 0 goto :cmEnd
-C:\mingw64\bin\cmake.exe -E touch "D:/my coding projects/Simple-registration-system/tests/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/Debug/googletest-populate-patch"
+C:\mingw64\bin\cmake.exe -E touch D:/my_coding_projects/Simple-registration-system/tests/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/Debug/googletest-populate-patch
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -124,23 +124,23 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\my coding projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\googletest-populate-patch-info.txt;D:\my coding projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\Debug\googletest-populate-update;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\my coding projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\Debug\googletest-populate-patch</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\my_coding_projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\googletest-populate-patch-info.txt;D:\my_coding_projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\Debug\googletest-populate-update;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\my_coding_projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\Debug\googletest-populate-patch</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\my coding projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\CMakeFiles\3d6909992dcb1bad24c7a8ff811ef862\googletest-populate-configure.rule">
+    <CustomBuild Include="D:\my_coding_projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\CMakeFiles\2a6395b7cea4f9c4af50a56034eae675\googletest-populate-configure.rule">
       <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</BuildInParallel>
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No configure step for 'googletest-populate'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-cd "D:\my coding projects\Simple-registration-system\tests\build\_deps\googletest-build"
+cd D:\my_coding_projects\Simple-registration-system\tests\build\_deps\googletest-build
 if %errorlevel% neq 0 goto :cmEnd
 D:
 if %errorlevel% neq 0 goto :cmEnd
 C:\mingw64\bin\cmake.exe -E echo_append
 if %errorlevel% neq 0 goto :cmEnd
-C:\mingw64\bin\cmake.exe -E touch "D:/my coding projects/Simple-registration-system/tests/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/Debug/googletest-populate-configure"
+C:\mingw64\bin\cmake.exe -E touch D:/my_coding_projects/Simple-registration-system/tests/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/Debug/googletest-populate-configure
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -148,23 +148,23 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\my coding projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\googletest-populate-prefix\tmp\googletest-populate-cfgcmd.txt;D:\my coding projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\Debug\googletest-populate-patch;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\my coding projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\Debug\googletest-populate-configure</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\my_coding_projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\googletest-populate-prefix\tmp\googletest-populate-cfgcmd.txt;D:\my_coding_projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\Debug\googletest-populate-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\my_coding_projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\Debug\googletest-populate-configure</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\my coding projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\CMakeFiles\3d6909992dcb1bad24c7a8ff811ef862\googletest-populate-build.rule">
+    <CustomBuild Include="D:\my_coding_projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\CMakeFiles\2a6395b7cea4f9c4af50a56034eae675\googletest-populate-build.rule">
       <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</BuildInParallel>
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No build step for 'googletest-populate'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-cd "D:\my coding projects\Simple-registration-system\tests\build\_deps\googletest-build"
+cd D:\my_coding_projects\Simple-registration-system\tests\build\_deps\googletest-build
 if %errorlevel% neq 0 goto :cmEnd
 D:
 if %errorlevel% neq 0 goto :cmEnd
 C:\mingw64\bin\cmake.exe -E echo_append
 if %errorlevel% neq 0 goto :cmEnd
-C:\mingw64\bin\cmake.exe -E touch "D:/my coding projects/Simple-registration-system/tests/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/Debug/googletest-populate-build"
+C:\mingw64\bin\cmake.exe -E touch D:/my_coding_projects/Simple-registration-system/tests/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/Debug/googletest-populate-build
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -172,23 +172,23 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\my coding projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\Debug\googletest-populate-configure;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\my coding projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\Debug\googletest-populate-build</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\my_coding_projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\Debug\googletest-populate-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\my_coding_projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\Debug\googletest-populate-build</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\my coding projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\CMakeFiles\3d6909992dcb1bad24c7a8ff811ef862\googletest-populate-install.rule">
+    <CustomBuild Include="D:\my_coding_projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\CMakeFiles\2a6395b7cea4f9c4af50a56034eae675\googletest-populate-install.rule">
       <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</BuildInParallel>
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No install step for 'googletest-populate'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-cd "D:\my coding projects\Simple-registration-system\tests\build\_deps\googletest-build"
+cd D:\my_coding_projects\Simple-registration-system\tests\build\_deps\googletest-build
 if %errorlevel% neq 0 goto :cmEnd
 D:
 if %errorlevel% neq 0 goto :cmEnd
 C:\mingw64\bin\cmake.exe -E echo_append
 if %errorlevel% neq 0 goto :cmEnd
-C:\mingw64\bin\cmake.exe -E touch "D:/my coding projects/Simple-registration-system/tests/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/Debug/googletest-populate-install"
+C:\mingw64\bin\cmake.exe -E touch D:/my_coding_projects/Simple-registration-system/tests/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/Debug/googletest-populate-install
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -196,23 +196,23 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\my coding projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\Debug\googletest-populate-build;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\my coding projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\Debug\googletest-populate-install</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\my_coding_projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\Debug\googletest-populate-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\my_coding_projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\Debug\googletest-populate-install</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\my coding projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\CMakeFiles\3d6909992dcb1bad24c7a8ff811ef862\googletest-populate-test.rule">
+    <CustomBuild Include="D:\my_coding_projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\CMakeFiles\2a6395b7cea4f9c4af50a56034eae675\googletest-populate-test.rule">
       <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</BuildInParallel>
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No test step for 'googletest-populate'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-cd "D:\my coding projects\Simple-registration-system\tests\build\_deps\googletest-build"
+cd D:\my_coding_projects\Simple-registration-system\tests\build\_deps\googletest-build
 if %errorlevel% neq 0 goto :cmEnd
 D:
 if %errorlevel% neq 0 goto :cmEnd
 C:\mingw64\bin\cmake.exe -E echo_append
 if %errorlevel% neq 0 goto :cmEnd
-C:\mingw64\bin\cmake.exe -E touch "D:/my coding projects/Simple-registration-system/tests/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/Debug/googletest-populate-test"
+C:\mingw64\bin\cmake.exe -E touch D:/my_coding_projects/Simple-registration-system/tests/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/Debug/googletest-populate-test
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -220,21 +220,21 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\my coding projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\Debug\googletest-populate-install;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\my coding projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\Debug\googletest-populate-test</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\my_coding_projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\Debug\googletest-populate-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\my_coding_projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\Debug\googletest-populate-test</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\my coding projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\CMakeFiles\7a4cb28e89d1ce1a35487e2c2f131a45\googletest-populate-complete.rule">
+    <CustomBuild Include="D:\my_coding_projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\CMakeFiles\62638edb01169ea5ab61431c16eaad4a\googletest-populate-complete.rule">
       <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</BuildInParallel>
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Completed 'googletest-populate'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-C:\mingw64\bin\cmake.exe -E make_directory "D:/my coding projects/Simple-registration-system/tests/build/_deps/googletest-subbuild/CMakeFiles/Debug"
+C:\mingw64\bin\cmake.exe -E make_directory D:/my_coding_projects/Simple-registration-system/tests/build/_deps/googletest-subbuild/CMakeFiles/Debug
 if %errorlevel% neq 0 goto :cmEnd
-C:\mingw64\bin\cmake.exe -E touch "D:/my coding projects/Simple-registration-system/tests/build/_deps/googletest-subbuild/CMakeFiles/Debug/googletest-populate-complete"
+C:\mingw64\bin\cmake.exe -E touch D:/my_coding_projects/Simple-registration-system/tests/build/_deps/googletest-subbuild/CMakeFiles/Debug/googletest-populate-complete
 if %errorlevel% neq 0 goto :cmEnd
-C:\mingw64\bin\cmake.exe -E touch "D:/my coding projects/Simple-registration-system/tests/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/Debug/googletest-populate-done"
+C:\mingw64\bin\cmake.exe -E touch D:/my_coding_projects/Simple-registration-system/tests/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/Debug/googletest-populate-done
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -242,13 +242,13 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\my coding projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\Debug\googletest-populate-install;D:\my coding projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\Debug\googletest-populate-mkdir;D:\my coding projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\Debug\googletest-populate-download;D:\my coding projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\Debug\googletest-populate-update;D:\my coding projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\Debug\googletest-populate-patch;D:\my coding projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\Debug\googletest-populate-configure;D:\my coding projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\Debug\googletest-populate-build;D:\my coding projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\Debug\googletest-populate-test;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\my coding projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\CMakeFiles\Debug\googletest-populate-complete</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\my_coding_projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\Debug\googletest-populate-install;D:\my_coding_projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\Debug\googletest-populate-mkdir;D:\my_coding_projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\Debug\googletest-populate-download;D:\my_coding_projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\Debug\googletest-populate-update;D:\my_coding_projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\Debug\googletest-populate-patch;D:\my_coding_projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\Debug\googletest-populate-configure;D:\my_coding_projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\Debug\googletest-populate-build;D:\my_coding_projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\Debug\googletest-populate-test;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\my_coding_projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\CMakeFiles\Debug\googletest-populate-complete</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\my coding projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\CMakeFiles\6dfdf05e97eed2bd0ff201cbbd368bd1\googletest-populate.rule">
+    <CustomBuild Include="D:\my_coding_projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\CMakeFiles\3f6486439c66bc467c87f25b39cf6b57\googletest-populate.rule">
       <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</BuildInParallel>
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"></Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
@@ -258,18 +258,18 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\my coding projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\CMakeFiles\Debug\googletest-populate-complete;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\my coding projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\CMakeFiles\googletest-populate</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\my_coding_projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\CMakeFiles\Debug\googletest-populate-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\my_coding_projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\CMakeFiles\googletest-populate</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
       <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\my coding projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\CMakeLists.txt">
+    <CustomBuild Include="D:\my_coding_projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\CMakeLists.txt">
       <UseUtf8Encoding>Always</UseUtf8Encoding>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/my coding projects/Simple-registration-system/tests/build/_deps/googletest-subbuild/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/my_coding_projects/Simple-registration-system/tests/build/_deps/googletest-subbuild/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-C:\mingw64\bin\cmake.exe "-SD:/my coding projects/Simple-registration-system/tests/build/_deps/googletest-subbuild" "-BD:/my coding projects/Simple-registration-system/tests/build/_deps/googletest-subbuild" --check-stamp-file "D:/my coding projects/Simple-registration-system/tests/build/_deps/googletest-subbuild/CMakeFiles/generate.stamp"
+C:\mingw64\bin\cmake.exe -SD:/my_coding_projects/Simple-registration-system/tests/build/_deps/googletest-subbuild -BD:/my_coding_projects/Simple-registration-system/tests/build/_deps/googletest-subbuild --check-stamp-file D:/my_coding_projects/Simple-registration-system/tests/build/_deps/googletest-subbuild/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -277,18 +277,18 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\mingw64\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;C:\mingw64\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;C:\mingw64\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;C:\mingw64\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;C:\mingw64\share\cmake-3.28\Modules\ExternalProject.cmake;C:\mingw64\share\cmake-3.28\Modules\ExternalProject\PatchInfo.txt.in;C:\mingw64\share\cmake-3.28\Modules\ExternalProject\RepositoryInfo.txt.in;C:\mingw64\share\cmake-3.28\Modules\ExternalProject\UpdateInfo.txt.in;C:\mingw64\share\cmake-3.28\Modules\ExternalProject\cfgcmd.txt.in;C:\mingw64\share\cmake-3.28\Modules\ExternalProject\download.cmake.in;C:\mingw64\share\cmake-3.28\Modules\ExternalProject\extractfile.cmake.in;C:\mingw64\share\cmake-3.28\Modules\ExternalProject\mkdirs.cmake.in;C:\mingw64\share\cmake-3.28\Modules\ExternalProject\shared_internal_commands.cmake;C:\mingw64\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;C:\mingw64\share\cmake-3.28\Modules\Platform\Windows.cmake;C:\mingw64\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;D:\my coding projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\CMakeFiles\3.28.1\CMakeSystem.cmake;D:\my coding projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\googletest-populate-prefix\tmp\googletest-populate-mkdirs.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\my coding projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\mingw64\share\cmake-3.28\Modules\CMakeDetermineSystem.cmake;C:\mingw64\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;C:\mingw64\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;C:\mingw64\share\cmake-3.28\Modules\CMakeSystem.cmake.in;C:\mingw64\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;C:\mingw64\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;C:\mingw64\share\cmake-3.28\Modules\ExternalProject.cmake;C:\mingw64\share\cmake-3.28\Modules\ExternalProject\PatchInfo.txt.in;C:\mingw64\share\cmake-3.28\Modules\ExternalProject\RepositoryInfo.txt.in;C:\mingw64\share\cmake-3.28\Modules\ExternalProject\UpdateInfo.txt.in;C:\mingw64\share\cmake-3.28\Modules\ExternalProject\cfgcmd.txt.in;C:\mingw64\share\cmake-3.28\Modules\ExternalProject\download.cmake.in;C:\mingw64\share\cmake-3.28\Modules\ExternalProject\extractfile.cmake.in;C:\mingw64\share\cmake-3.28\Modules\ExternalProject\mkdirs.cmake.in;C:\mingw64\share\cmake-3.28\Modules\ExternalProject\shared_internal_commands.cmake;C:\mingw64\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;C:\mingw64\share\cmake-3.28\Modules\Platform\Windows.cmake;C:\mingw64\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;D:\my_coding_projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\CMakeFiles\3.28.1\CMakeSystem.cmake;D:\my_coding_projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\googletest-populate-prefix\tmp\googletest-populate-mkdirs.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\my_coding_projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <None Include="D:\my coding projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\CMakeFiles\googletest-populate">
+    <None Include="D:\my_coding_projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\CMakeFiles\googletest-populate">
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="D:\my coding projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\ZERO_CHECK.vcxproj">
-      <Project>{DEB1EC38-226B-3CD2-90A5-FB1978ED5354}</Project>
+    <ProjectReference Include="D:\my_coding_projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\ZERO_CHECK.vcxproj">
+      <Project>{D09F4331-2E59-3DE1-9AAB-278C47F0E1CC}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>

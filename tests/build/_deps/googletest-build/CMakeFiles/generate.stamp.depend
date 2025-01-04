@@ -1,4 +1,4 @@
 # CMake generation dependency list for this directory.
 C:/mingw64/share/cmake-3.28/Modules/CMakeDependentOption.cmake
 C:/mingw64/share/cmake-3.28/Modules/GNUInstallDirs.cmake
-D:/my coding projects/Simple-registration-system/tests/build/_deps/googletest-src/CMakeLists.txt
+D:/my_coding_projects/Simple-registration-system/tests/build/_deps/googletest-src/CMakeLists.txt

@@ -1,6 +1,8 @@
 # CMake generation dependency list for this directory.
+C:/mingw64/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake
 C:/mingw64/share/cmake-3.28/Modules/CMakeGenericSystem.cmake
 C:/mingw64/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake
+C:/mingw64/share/cmake-3.28/Modules/CMakeSystem.cmake.in
 C:/mingw64/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake
 C:/mingw64/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake
 C:/mingw64/share/cmake-3.28/Modules/ExternalProject.cmake
@@ -15,6 +17,6 @@ C:/mingw64/share/cmake-3.28/Modules/ExternalProject/shared_internal_commands.cma
 C:/mingw64/share/cmake-3.28/Modules/Platform/Windows-Initialize.cmake
 C:/mingw64/share/cmake-3.28/Modules/Platform/Windows.cmake
 C:/mingw64/share/cmake-3.28/Modules/Platform/WindowsPaths.cmake
-D:/my coding projects/Simple-registration-system/tests/build/_deps/googletest-subbuild/CMakeFiles/3.28.1/CMakeSystem.cmake
-D:/my coding projects/Simple-registration-system/tests/build/_deps/googletest-subbuild/CMakeLists.txt
-D:/my coding projects/Simple-registration-system/tests/build/_deps/googletest-subbuild/googletest-populate-prefix/tmp/googletest-populate-mkdirs.cmake
+D:/my_coding_projects/Simple-registration-system/tests/build/_deps/googletest-subbuild/CMakeFiles/3.28.1/CMakeSystem.cmake
+D:/my_coding_projects/Simple-registration-system/tests/build/_deps/googletest-subbuild/CMakeLists.txt
+D:/my_coding_projects/Simple-registration-system/tests/build/_deps/googletest-subbuild/googletest-populate-prefix/tmp/googletest-populate-mkdirs.cmake

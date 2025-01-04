@@ -1,5 +1,13 @@
-HelloTest.BasicAssertions 14 0.000932293
-HashTable_test_NOT_BUILT 0 0
-HashTableTest.AssertionTest 12 0.000969825
-HashTableTest.DeleteTest 2 0.00593875
+HelloTest.BasicAssertions 1 0.0332752
+HashTableTest.AssertionTest 1 0.0213945
+HashTableTest.DeleteTest 1 0.0157092
+DatabaseTest.CreateDb 1 0.0523695
+DatabaseTest.OpenDB 1 0.0116157
+DatabaseTest.CreateTable 1 0.0235731
+DatabaseTest.InsertUser 1 0.0235253
+DatabaseTest.DeleteUser 1 0.0251599
+DatabaseTest.FindUser 1 0.0219613
+DatabaseTest.FindNonExistentUser 1 0.0200723
+DatabaseTest.GetUserData 1 0.0214316
+DatabaseTest.DeleteTable 1 0.0189734
 ---

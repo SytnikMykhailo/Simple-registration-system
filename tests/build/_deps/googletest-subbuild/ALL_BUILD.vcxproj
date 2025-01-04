@@ -13,7 +13,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{346632E7-3093-30F0-B164-096098BCE449}</ProjectGuid>
+    <ProjectGuid>{029C7849-FD57-3715-B516-588708B891F0}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
     <Platform>x64</Platform>
@@ -48,11 +48,11 @@
     </Midl>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\my coding projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\CMakeLists.txt">
+    <CustomBuild Include="D:\my_coding_projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\CMakeLists.txt">
       <UseUtf8Encoding>Always</UseUtf8Encoding>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/my coding projects/Simple-registration-system/tests/build/_deps/googletest-subbuild/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/my_coding_projects/Simple-registration-system/tests/build/_deps/googletest-subbuild/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-C:\mingw64\bin\cmake.exe "-SD:/my coding projects/Simple-registration-system/tests/build/_deps/googletest-subbuild" "-BD:/my coding projects/Simple-registration-system/tests/build/_deps/googletest-subbuild" --check-stamp-file "D:/my coding projects/Simple-registration-system/tests/build/_deps/googletest-subbuild/CMakeFiles/generate.stamp"
+C:\mingw64\bin\cmake.exe -SD:/my_coding_projects/Simple-registration-system/tests/build/_deps/googletest-subbuild -BD:/my_coding_projects/Simple-registration-system/tests/build/_deps/googletest-subbuild --check-stamp-file D:/my_coding_projects/Simple-registration-system/tests/build/_deps/googletest-subbuild/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -60,22 +60,22 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\mingw64\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;C:\mingw64\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;C:\mingw64\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;C:\mingw64\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;C:\mingw64\share\cmake-3.28\Modules\ExternalProject.cmake;C:\mingw64\share\cmake-3.28\Modules\ExternalProject\PatchInfo.txt.in;C:\mingw64\share\cmake-3.28\Modules\ExternalProject\RepositoryInfo.txt.in;C:\mingw64\share\cmake-3.28\Modules\ExternalProject\UpdateInfo.txt.in;C:\mingw64\share\cmake-3.28\Modules\ExternalProject\cfgcmd.txt.in;C:\mingw64\share\cmake-3.28\Modules\ExternalProject\download.cmake.in;C:\mingw64\share\cmake-3.28\Modules\ExternalProject\extractfile.cmake.in;C:\mingw64\share\cmake-3.28\Modules\ExternalProject\mkdirs.cmake.in;C:\mingw64\share\cmake-3.28\Modules\ExternalProject\shared_internal_commands.cmake;C:\mingw64\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;C:\mingw64\share\cmake-3.28\Modules\Platform\Windows.cmake;C:\mingw64\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;D:\my coding projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\CMakeFiles\3.28.1\CMakeSystem.cmake;D:\my coding projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\googletest-populate-prefix\tmp\googletest-populate-mkdirs.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\my coding projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\mingw64\share\cmake-3.28\Modules\CMakeDetermineSystem.cmake;C:\mingw64\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;C:\mingw64\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;C:\mingw64\share\cmake-3.28\Modules\CMakeSystem.cmake.in;C:\mingw64\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;C:\mingw64\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;C:\mingw64\share\cmake-3.28\Modules\ExternalProject.cmake;C:\mingw64\share\cmake-3.28\Modules\ExternalProject\PatchInfo.txt.in;C:\mingw64\share\cmake-3.28\Modules\ExternalProject\RepositoryInfo.txt.in;C:\mingw64\share\cmake-3.28\Modules\ExternalProject\UpdateInfo.txt.in;C:\mingw64\share\cmake-3.28\Modules\ExternalProject\cfgcmd.txt.in;C:\mingw64\share\cmake-3.28\Modules\ExternalProject\download.cmake.in;C:\mingw64\share\cmake-3.28\Modules\ExternalProject\extractfile.cmake.in;C:\mingw64\share\cmake-3.28\Modules\ExternalProject\mkdirs.cmake.in;C:\mingw64\share\cmake-3.28\Modules\ExternalProject\shared_internal_commands.cmake;C:\mingw64\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;C:\mingw64\share\cmake-3.28\Modules\Platform\Windows.cmake;C:\mingw64\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;D:\my_coding_projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\CMakeFiles\3.28.1\CMakeSystem.cmake;D:\my_coding_projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\googletest-populate-prefix\tmp\googletest-populate-mkdirs.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\my_coding_projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="D:\my coding projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\ZERO_CHECK.vcxproj">
-      <Project>{DEB1EC38-226B-3CD2-90A5-FB1978ED5354}</Project>
+    <ProjectReference Include="D:\my_coding_projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\ZERO_CHECK.vcxproj">
+      <Project>{D09F4331-2E59-3DE1-9AAB-278C47F0E1CC}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="D:\my coding projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\googletest-populate.vcxproj">
-      <Project>{B6CA8541-7D40-30B7-A653-03CD988B10B2}</Project>
+    <ProjectReference Include="D:\my_coding_projects\Simple-registration-system\tests\build\_deps\googletest-subbuild\googletest-populate.vcxproj">
+      <Project>{AB17622B-1863-33F2-8D4B-9AF45688A4DB}</Project>
       <Name>googletest-populate</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>

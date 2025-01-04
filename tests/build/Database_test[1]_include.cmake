@@ -1,0 +1,5 @@
+if(EXISTS "D:/my_coding_projects/Simple-registration-system/tests/build/Database_test[1]_tests.cmake")
+  include("D:/my_coding_projects/Simple-registration-system/tests/build/Database_test[1]_tests.cmake")
+else()
+  add_test(Database_test_NOT_BUILT Database_test_NOT_BUILT)
+endif()

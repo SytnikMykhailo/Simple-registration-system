@@ -1,13 +1,13 @@
-Start testing: Dec 30 18:54 Central Europe Standard Time
+Start testing: Jan 04 18:25 Central Europe Standard Time
 ----------------------------------------------------------
-1/3 Testing: HelloTest.BasicAssertions
-1/3 Test: HelloTest.BasicAssertions
-Command: "D:/my coding projects/Simple-registration-system/tests/build/Debug/hello_test.exe" "--gtest_filter=HelloTest.BasicAssertions" "--gtest_also_run_disabled_tests"
-Directory: D:/my coding projects/Simple-registration-system/tests/build
-"HelloTest.BasicAssertions" start time: Dec 30 18:54 Central Europe Standard Time
+1/12 Testing: HelloTest.BasicAssertions
+1/12 Test: HelloTest.BasicAssertions
+Command: "D:/my_coding_projects/Simple-registration-system/tests/build/Debug/hello_test.exe" "--gtest_filter=HelloTest.BasicAssertions" "--gtest_also_run_disabled_tests"
+Directory: D:/my_coding_projects/Simple-registration-system/tests/build
+"HelloTest.BasicAssertions" start time: Jan 04 18:25 Central Europe Standard Time
 Output:
 ----------------------------------------------------------
-Running main() from D:\my coding projects\Simple-registration-system\tests\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Running main() from D:\my_coding_projects\Simple-registration-system\tests\build\_deps\googletest-src\googletest\src\gtest_main.cc
 Note: Google Test filter = HelloTest.BasicAssertions
 [==========] Running 1 test from 1 test suite.
 [----------] Global test environment set-up.
@@ -17,24 +17,24 @@ Note: Google Test filter = HelloTest.BasicAssertions
 [----------] 1 test from HelloTest (0 ms total)
 
 [----------] Global test environment tear-down
-[==========] 1 test from 1 test suite ran. (0 ms total)
+[==========] 1 test from 1 test suite ran. (3 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.01 sec
+Test time =   0.03 sec
 ----------------------------------------------------------
 Test Passed.
-"HelloTest.BasicAssertions" end time: Dec 30 18:54 Central Europe Standard Time
+"HelloTest.BasicAssertions" end time: Jan 04 18:25 Central Europe Standard Time
 "HelloTest.BasicAssertions" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-2/3 Testing: HashTableTest.AssertionTest
-2/3 Test: HashTableTest.AssertionTest
-Command: "D:/my coding projects/Simple-registration-system/tests/build/Debug/HashTable_test.exe" "--gtest_filter=HashTableTest.AssertionTest" "--gtest_also_run_disabled_tests"
-Directory: D:/my coding projects/Simple-registration-system/tests/build
-"HashTableTest.AssertionTest" start time: Dec 30 18:54 Central Europe Standard Time
+2/12 Testing: HashTableTest.AssertionTest
+2/12 Test: HashTableTest.AssertionTest
+Command: "D:/my_coding_projects/Simple-registration-system/tests/build/Debug/HashTable_test.exe" "--gtest_filter=HashTableTest.AssertionTest" "--gtest_also_run_disabled_tests"
+Directory: D:/my_coding_projects/Simple-registration-system/tests/build
+"HashTableTest.AssertionTest" start time: Jan 04 18:25 Central Europe Standard Time
 Output:
 ----------------------------------------------------------
-Running main() from D:\my coding projects\Simple-registration-system\tests\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Running main() from D:\my_coding_projects\Simple-registration-system\tests\build\_deps\googletest-src\googletest\src\gtest_main.cc
 Note: Google Test filter = HashTableTest.AssertionTest
 [==========] Running 1 test from 1 test suite.
 [----------] Global test environment set-up.
@@ -47,21 +47,21 @@ Note: Google Test filter = HashTableTest.AssertionTest
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.01 sec
+Test time =   0.02 sec
 ----------------------------------------------------------
 Test Passed.
-"HashTableTest.AssertionTest" end time: Dec 30 18:54 Central Europe Standard Time
+"HashTableTest.AssertionTest" end time: Jan 04 18:25 Central Europe Standard Time
 "HashTableTest.AssertionTest" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-3/3 Testing: HashTableTest.DeleteTest
-3/3 Test: HashTableTest.DeleteTest
-Command: "D:/my coding projects/Simple-registration-system/tests/build/Debug/HashTable_test.exe" "--gtest_filter=HashTableTest.DeleteTest" "--gtest_also_run_disabled_tests"
-Directory: D:/my coding projects/Simple-registration-system/tests/build
-"HashTableTest.DeleteTest" start time: Dec 30 18:54 Central Europe Standard Time
+3/12 Testing: HashTableTest.DeleteTest
+3/12 Test: HashTableTest.DeleteTest
+Command: "D:/my_coding_projects/Simple-registration-system/tests/build/Debug/HashTable_test.exe" "--gtest_filter=HashTableTest.DeleteTest" "--gtest_also_run_disabled_tests"
+Directory: D:/my_coding_projects/Simple-registration-system/tests/build
+"HashTableTest.DeleteTest" start time: Jan 04 18:25 Central Europe Standard Time
 Output:
 ----------------------------------------------------------
-Running main() from D:\my coding projects\Simple-registration-system\tests\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Running main() from D:\my_coding_projects\Simple-registration-system\tests\build\_deps\googletest-src\googletest\src\gtest_main.cc
 Note: Google Test filter = HashTableTest.DeleteTest
 [==========] Running 1 test from 1 test suite.
 [----------] Global test environment set-up.
@@ -77,11 +77,319 @@ Note: Google Test filter = HashTableTest.DeleteTest
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.01 sec
+Test time =   0.02 sec
 ----------------------------------------------------------
 Test Passed.
-"HashTableTest.DeleteTest" end time: Dec 30 18:54 Central Europe Standard Time
+"HashTableTest.DeleteTest" end time: Jan 04 18:25 Central Europe Standard Time
 "HashTableTest.DeleteTest" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Dec 30 18:54 Central Europe Standard Time
+4/12 Testing: DatabaseTest.CreateDb
+4/12 Test: DatabaseTest.CreateDb
+Command: "D:/my_coding_projects/Simple-registration-system/tests/build/Debug/Database_test.exe" "--gtest_filter=DatabaseTest.CreateDb" "--gtest_also_run_disabled_tests"
+Directory: D:/my_coding_projects/Simple-registration-system/tests/build
+"DatabaseTest.CreateDb" start time: Jan 04 18:25 Central Europe Standard Time
+Output:
+----------------------------------------------------------
+Running main() from D:\my_coding_projects\Simple-registration-system\tests\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = DatabaseTest.CreateDb
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DatabaseTest
+[ RUN      ] DatabaseTest.CreateDb
+Database created successfully!
+Opened database successfully!
+Table created successfully
+User inserted successfully
+ID = 1 
+User found with ID: 1
+Table deleted successfully
+Error deleting DB
+[       OK ] DatabaseTest.CreateDb (28 ms)
+[----------] 1 test from DatabaseTest (29 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (29 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"DatabaseTest.CreateDb" end time: Jan 04 18:25 Central Europe Standard Time
+"DatabaseTest.CreateDb" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/12 Testing: DatabaseTest.OpenDB
+5/12 Test: DatabaseTest.OpenDB
+Command: "D:/my_coding_projects/Simple-registration-system/tests/build/Debug/Database_test.exe" "--gtest_filter=DatabaseTest.OpenDB" "--gtest_also_run_disabled_tests"
+Directory: D:/my_coding_projects/Simple-registration-system/tests/build
+"DatabaseTest.OpenDB" start time: Jan 04 18:25 Central Europe Standard Time
+Output:
+----------------------------------------------------------
+Running main() from D:\my_coding_projects\Simple-registration-system\tests\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = DatabaseTest.OpenDB
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DatabaseTest
+[ RUN      ] DatabaseTest.OpenDB
+Database created successfully!
+Opened database successfully!
+Error deleting DB
+[       OK ] DatabaseTest.OpenDB (0 ms)
+[----------] 1 test from DatabaseTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"DatabaseTest.OpenDB" end time: Jan 04 18:25 Central Europe Standard Time
+"DatabaseTest.OpenDB" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/12 Testing: DatabaseTest.CreateTable
+6/12 Test: DatabaseTest.CreateTable
+Command: "D:/my_coding_projects/Simple-registration-system/tests/build/Debug/Database_test.exe" "--gtest_filter=DatabaseTest.CreateTable" "--gtest_also_run_disabled_tests"
+Directory: D:/my_coding_projects/Simple-registration-system/tests/build
+"DatabaseTest.CreateTable" start time: Jan 04 18:25 Central Europe Standard Time
+Output:
+----------------------------------------------------------
+Running main() from D:\my_coding_projects\Simple-registration-system\tests\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = DatabaseTest.CreateTable
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DatabaseTest
+[ RUN      ] DatabaseTest.CreateTable
+Database created successfully!
+Opened database successfully!
+Table created successfully
+User inserted successfully
+ID = 1 
+User found with ID: 1
+Table deleted successfully
+Error deleting DB
+[       OK ] DatabaseTest.CreateTable (11 ms)
+[----------] 1 test from DatabaseTest (11 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (11 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"DatabaseTest.CreateTable" end time: Jan 04 18:25 Central Europe Standard Time
+"DatabaseTest.CreateTable" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/12 Testing: DatabaseTest.InsertUser
+7/12 Test: DatabaseTest.InsertUser
+Command: "D:/my_coding_projects/Simple-registration-system/tests/build/Debug/Database_test.exe" "--gtest_filter=DatabaseTest.InsertUser" "--gtest_also_run_disabled_tests"
+Directory: D:/my_coding_projects/Simple-registration-system/tests/build
+"DatabaseTest.InsertUser" start time: Jan 04 18:25 Central Europe Standard Time
+Output:
+----------------------------------------------------------
+Running main() from D:\my_coding_projects\Simple-registration-system\tests\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = DatabaseTest.InsertUser
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DatabaseTest
+[ RUN      ] DatabaseTest.InsertUser
+Database created successfully!
+Opened database successfully!
+Table created successfully
+User inserted successfully
+ID = 1 
+User found with ID: 1
+Table deleted successfully
+Error deleting DB
+[       OK ] DatabaseTest.InsertUser (9 ms)
+[----------] 1 test from DatabaseTest (10 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (10 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"DatabaseTest.InsertUser" end time: Jan 04 18:25 Central Europe Standard Time
+"DatabaseTest.InsertUser" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/12 Testing: DatabaseTest.DeleteUser
+8/12 Test: DatabaseTest.DeleteUser
+Command: "D:/my_coding_projects/Simple-registration-system/tests/build/Debug/Database_test.exe" "--gtest_filter=DatabaseTest.DeleteUser" "--gtest_also_run_disabled_tests"
+Directory: D:/my_coding_projects/Simple-registration-system/tests/build
+"DatabaseTest.DeleteUser" start time: Jan 04 18:25 Central Europe Standard Time
+Output:
+----------------------------------------------------------
+Running main() from D:\my_coding_projects\Simple-registration-system\tests\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = DatabaseTest.DeleteUser
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DatabaseTest
+[ RUN      ] DatabaseTest.DeleteUser
+Database created successfully!
+Opened database successfully!
+Table created successfully
+User inserted successfully
+ID = 1 
+User found with ID: 1
+User deleted successfully
+User not found.
+Table deleted successfully
+Error deleting DB
+[       OK ] DatabaseTest.DeleteUser (11 ms)
+[----------] 1 test from DatabaseTest (11 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (11 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"DatabaseTest.DeleteUser" end time: Jan 04 18:25 Central Europe Standard Time
+"DatabaseTest.DeleteUser" time elapsed: 00:00:00
+----------------------------------------------------------
+
+9/12 Testing: DatabaseTest.FindUser
+9/12 Test: DatabaseTest.FindUser
+Command: "D:/my_coding_projects/Simple-registration-system/tests/build/Debug/Database_test.exe" "--gtest_filter=DatabaseTest.FindUser" "--gtest_also_run_disabled_tests"
+Directory: D:/my_coding_projects/Simple-registration-system/tests/build
+"DatabaseTest.FindUser" start time: Jan 04 18:25 Central Europe Standard Time
+Output:
+----------------------------------------------------------
+Running main() from D:\my_coding_projects\Simple-registration-system\tests\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = DatabaseTest.FindUser
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DatabaseTest
+[ RUN      ] DatabaseTest.FindUser
+Database created successfully!
+Opened database successfully!
+Table created successfully
+User inserted successfully
+ID = 1 
+User found with ID: 1
+Table deleted successfully
+Error deleting DB
+[       OK ] DatabaseTest.FindUser (10 ms)
+[----------] 1 test from DatabaseTest (10 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (10 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"DatabaseTest.FindUser" end time: Jan 04 18:25 Central Europe Standard Time
+"DatabaseTest.FindUser" time elapsed: 00:00:00
+----------------------------------------------------------
+
+10/12 Testing: DatabaseTest.FindNonExistentUser
+10/12 Test: DatabaseTest.FindNonExistentUser
+Command: "D:/my_coding_projects/Simple-registration-system/tests/build/Debug/Database_test.exe" "--gtest_filter=DatabaseTest.FindNonExistentUser" "--gtest_also_run_disabled_tests"
+Directory: D:/my_coding_projects/Simple-registration-system/tests/build
+"DatabaseTest.FindNonExistentUser" start time: Jan 04 18:25 Central Europe Standard Time
+Output:
+----------------------------------------------------------
+Running main() from D:\my_coding_projects\Simple-registration-system\tests\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = DatabaseTest.FindNonExistentUser
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DatabaseTest
+[ RUN      ] DatabaseTest.FindNonExistentUser
+Database created successfully!
+Opened database successfully!
+Table created successfully
+User not found.
+Table deleted successfully
+Error deleting DB
+[       OK ] DatabaseTest.FindNonExistentUser (7 ms)
+[----------] 1 test from DatabaseTest (7 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (7 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"DatabaseTest.FindNonExistentUser" end time: Jan 04 18:25 Central Europe Standard Time
+"DatabaseTest.FindNonExistentUser" time elapsed: 00:00:00
+----------------------------------------------------------
+
+11/12 Testing: DatabaseTest.GetUserData
+11/12 Test: DatabaseTest.GetUserData
+Command: "D:/my_coding_projects/Simple-registration-system/tests/build/Debug/Database_test.exe" "--gtest_filter=DatabaseTest.GetUserData" "--gtest_also_run_disabled_tests"
+Directory: D:/my_coding_projects/Simple-registration-system/tests/build
+"DatabaseTest.GetUserData" start time: Jan 04 18:25 Central Europe Standard Time
+Output:
+----------------------------------------------------------
+Running main() from D:\my_coding_projects\Simple-registration-system\tests\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = DatabaseTest.GetUserData
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DatabaseTest
+[ RUN      ] DatabaseTest.GetUserData
+Database created successfully!
+Opened database successfully!
+Table created successfully
+User inserted successfully
+ID = 1 EMAIL = test@example.com PASSWORD = password123 NAME = John SURNAME = Doe NOTE = Test note 
+User data retrieved successfully
+Table deleted successfully
+Error deleting DB
+[       OK ] DatabaseTest.GetUserData (10 ms)
+[----------] 1 test from DatabaseTest (10 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (10 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"DatabaseTest.GetUserData" end time: Jan 04 18:25 Central Europe Standard Time
+"DatabaseTest.GetUserData" time elapsed: 00:00:00
+----------------------------------------------------------
+
+12/12 Testing: DatabaseTest.DeleteTable
+12/12 Test: DatabaseTest.DeleteTable
+Command: "D:/my_coding_projects/Simple-registration-system/tests/build/Debug/Database_test.exe" "--gtest_filter=DatabaseTest.DeleteTable" "--gtest_also_run_disabled_tests"
+Directory: D:/my_coding_projects/Simple-registration-system/tests/build
+"DatabaseTest.DeleteTable" start time: Jan 04 18:25 Central Europe Standard Time
+Output:
+----------------------------------------------------------
+Running main() from D:\my_coding_projects\Simple-registration-system\tests\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = DatabaseTest.DeleteTable
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DatabaseTest
+[ RUN      ] DatabaseTest.DeleteTable
+Database created successfully!
+Opened database successfully!
+Table created successfully
+Table deleted successfully
+Error finding user: no such table: USERS
+Error deleting DB
+[       OK ] DatabaseTest.DeleteTable (7 ms)
+[----------] 1 test from DatabaseTest (7 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (7 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"DatabaseTest.DeleteTable" end time: Jan 04 18:25 Central Europe Standard Time
+"DatabaseTest.DeleteTable" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Jan 04 18:25 Central Europe Standard Time

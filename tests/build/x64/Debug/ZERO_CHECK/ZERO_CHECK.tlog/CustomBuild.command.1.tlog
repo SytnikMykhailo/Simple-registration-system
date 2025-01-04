@@ -1,6 +1,6 @@
-^D:\MY CODING PROJECTS\SIMPLE-REGISTRATION-SYSTEM\TESTS\BUILD\CMAKEFILES\5DF3F741579D6B3410EF7B2242187CD3\GENERATE.STAMP.RULE
+^D:\MY_CODING_PROJECTS\SIMPLE-REGISTRATION-SYSTEM\TESTS\BUILD\CMAKEFILES\CD2F3FA2A140BA4BDD516E465AF0CB32\GENERATE.STAMP.RULE
 setlocal
-C:\mingw64\bin\cmake.exe "-SD:/my coding projects/Simple-registration-system/tests" "-BD:/my coding projects/Simple-registration-system/tests/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "D:/my coding projects/Simple-registration-system/tests/build/my_project.sln"
+C:\mingw64\bin\cmake.exe -SD:/my_coding_projects/Simple-registration-system/tests -BD:/my_coding_projects/Simple-registration-system/tests/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/my_coding_projects/Simple-registration-system/tests/build/my_project.sln
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone

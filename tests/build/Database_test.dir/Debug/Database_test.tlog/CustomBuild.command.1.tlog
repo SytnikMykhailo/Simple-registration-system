@@ -1,0 +1,10 @@
+^D:\MY_CODING_PROJECTS\SIMPLE-REGISTRATION-SYSTEM\TESTS\CMAKELISTS.TXT
+setlocal
+C:\mingw64\bin\cmake.exe -SD:/my_coding_projects/Simple-registration-system/tests -BD:/my_coding_projects/Simple-registration-system/tests/build --check-stamp-file D:/my_coding_projects/Simple-registration-system/tests/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

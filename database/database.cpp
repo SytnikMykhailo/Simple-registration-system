@@ -1,6 +1,7 @@
 #include "database.h"
 #include <iostream>
 #include <string>
+#include "../sqlite3.h"
 
 Database::Database(const char *name){
     this->name = name;
@@ -22,7 +23,7 @@ void Database::open_db(const char *name){
 
 void Database::create_table(){
     const char *sql = "CREATE TABLE USERS ("
-                      "ID INT PRIMARY KEY NOT NULL,"
+                      "ID INTEGER PRIMARY KEY AUTOINCREMENT,"  // Автоінкремент для ID
                       "EMAIL TEXT NOT NULL,"
                       "PASSWORD TEXT NOT NULL,"
                       "NAME TEXT NOT NULL,"
@@ -59,9 +60,10 @@ void Database::delete_table(){
     }
 }
 
-void Database::insert_user(int id, const char *email, const char *password, const char *name, const char *surname, const char *note){
-    std::string sql = "INSERT INTO USERS (ID, EMAIL, PASSWORD, NAME, SURNAME, NOTE) VALUES (";
-    sql += std::to_string(id) + ", '" + email + "', '" + password + "', '" + name + "', '" + surname + "', '" + note + "');";
+void Database::insert_user(const char *email, const char *password, const char *name, const char *surname, const char *note){
+    std::string sql = "INSERT INTO USERS (EMAIL, PASSWORD, NAME, SURNAME, NOTE) VALUES ('";
+    sql += email + std::string("', '") + password + "', '" + name + "', '" + surname + "', '" + note + "');";
+    
     int rc = sqlite3_exec(db, sql.c_str(), nullptr, nullptr, nullptr);
     if(rc != SQLITE_OK){
         std::cerr << "Error inserting user: " << sqlite3_errmsg(db) << std::endl;
@@ -109,4 +111,25 @@ char* Database::get_user_data(int id){
     }
 
     return data;
+}
+
+void Database::create_db(const char *name){
+    sqlite3 *db;
+    int rc = sqlite3_open(name, &db);
+    if(rc){
+        std::cerr << "Error creating DB: " << sqlite3_errmsg(db) << std::endl;
+        sqlite3_close(db);
+    } else {
+        std::cout << "Database created successfully!" << std::endl;
+        sqlite3_close(db);
+    }
+}
+
+void Database::delete_db(const char *name){
+    int rc = remove(name);
+    if(rc){
+        std::cerr << "Error deleting DB" << std::endl;
+    } else {
+        std::cout << "Database deleted successfully!" << std::endl;
+    }
 }
